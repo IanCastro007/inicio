@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juventudes Antimisoginia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: "Figtree", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #fff;
+            color: #2e2e2e;
+        }
+
+        /* TOPO */
+        header {
+            background-color: #2D0B47;
+            /* Roxo escuro */
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img.logo {
+            height: 50px;
+        }
+
+        nav a {
+            color: #ff3366;
+            margin-left: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #FF66B2;
+            /* Rosa claro */
+        }
+
+        /* FUNDO DESTAQUE */
+        .hero {
+            background: url('fundo back.png') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            position: relative;
+            z-index: 0;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(55, 17, 83, 0.911);
+            /* camada de contraste */
+            z-index: -1;
+        }
+
+        .hero>* {
+            z-index: 1;
+            position: relative;
+        }
+
+        .btn {
+            margin-top: 15px;
+            padding: 15px 30px;
+            background-color: #FF66B2;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            
+        }
+
+        .btn:hover {
+            background-color: #e255a2;
+        }
+
+        #sobre {
+            background-color: #f5f5f5;
+            padding: 60px 26px;
+            color: #2e2e2e;
+        }
+
+        .sobre-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #sobre h2 {
+            font-size: 2.2em;
+            color: #2D0B47;
+            margin-bottom: 20px;
+        }
+
+        #sobre p {
+            font-size: 1.2em;
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+
+        footer {
+            background-color: #2D0B47;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        footer h3 {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            color: #FF66B2;
+        }
+
+        .footer-info p,
+        .footer-credits p {
+            margin: 6px 0;
+            font-size: 1em;
+        }
+
+        footer a {
+            color: #FF66B2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        iframe{
+            margin-top: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- TOPO -->
+    <header>
+        <img src="logo-antimisoginia.png" alt="Logo Juventudes Antimisoginia" class="logo">
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre"  onclick="document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' });">Um pouco sobre</a>e 
+        </nav>
+    </header>
+
+    <!-- BEM-VINDO -->
+    <section class="hero" id="inicio">
+        <h1>Bem-vind@ à Juventude Antimisoginia</h1>
+        <p>Um espaço de escuta, acolhimento e luta por igualdade dentro e fora da escola.</p>
+        <button class="btn" onclick="window.location.href='https://iancastro007.github.io/qmsomos/'" >Saiba Mais</button>
+    </section>
+    <section id="sobre">
+        <div class="sobre-container">
+            <h2>Sobre o Grupo Juventudes Antimisoginia</h2>
+            <p>
+                O grupo <strong>Juventudes Antimisoginia</strong> foi criado pelo <strong>SESI</strong> em 2025 com o
+                objetivo de promover a igualdade de gênero e combater a misoginia em ambientes escolares e comunitários.
+                A iniciativa busca fortalecer o protagonismo juvenil na construção de espaços mais seguros, inclusivos e
+                acolhedores para todas as identidades de gênero.
+            </p>
+            <p>
+                Por meio de ações educativas, rodas de conversa, projetos artísticos e campanhas de conscientização, o
+                grupo incentiva o diálogo e a escuta ativa, combatendo estereótipos e promovendo o respeito mútuo.
+            </p>
+
+        </div>
+    </section>
+    <center> <iframe src="//www.youtube.com/embed/UpZ4FOLIUfU" width="560" height="314"
+            allowfullscreen="allowfullscreen"></iframe></center>
+    <br><br>
+
+    <footer>
+        <div class="footer-container">
+            <h3>Portal de Denúncia Anti-Misoginia</h3>
+            <p>Se presenciar ou sofrer qualquer tipo de misoginia, não se cale. Denuncie.</p>
+
+            <div class="footer-info">
+                <p><strong>Contato:</strong> (11) 4723-6900</p>
+                <p><strong>Local:</strong> SESI Mogi das Cruzes</p>
+                <p><strong>E-mail:</strong> <a href="mailto:sumogcruzes@sesisp.org.br">sumogcruzes@sesisp.org.br</a></p>
+            </div>
+
+            <div class="footer-credits">
+                <p>© Direitos reservados a Gustavo Neco de Castro e Ian Oliveira de Castro</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
